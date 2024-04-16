@@ -1,0 +1,278 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    color: salmon;
+   padding: 2px 50px;
+  border-bottom: 2px solid white;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+a:hover{
+    color: orangered;
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+   
+}
+/*  */
+.slide{
+    width: 100%;
+    height: 600px;
+  }
+
+.contant {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white; 
+}
+.contant h1{
+    word-spacing: 2px;
+    font-size: 50px;
+
+}
+.contant p{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.contant button{
+    padding: 10px 40px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    overflow: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.about{
+    margin-top: 200px;
+    border-top: 2px solid white;
+}
+.left{
+    float: left;
+}
+.left img{
+    margin-left: 100px;
+    margin-top: 20px;
+width: 630px;
+height: 450px;
+float: left;
+}
+.right{
+    width: 630px;
+    height: 450px;
+    float: left;
+    background-color: rgb(49, 46, 46);
+    margin-top: 20px;
+    padding: 70px 25px;
+    
+}
+.right h1{
+    color: white;
+text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.right p{
+    color: white;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.right button{
+    padding: 10px 50px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    overflow: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.menu{
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    text-align:center;
+    border-top: 2px solid white;
+    margin-bottom: 60px;
+}
+
+.product{
+    margin-top: 10px;
+    border-top: 2px solid white;
+    margin-bottom: 60px;
+}
+
+.cards{
+    border: 2px solid white;
+    padding: 20px 40px;
+    width: 400px;
+    height: 500px;
+}
+
+.cards img{
+   width: 250px;
+   height: 150px;
+   border-radius: 50%;
+  
+   margin-top: 20px;
+}
+
+/* footer */
+
+
+.big-foot {
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(8, 7, 42); */
+    background-image: linear-gradient(rgb(16, 15, 15, 0.8), rgb(15, 13, 13, 0.8)),
+      url("./img/pizza.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .big-foot h4 {
+    text-align: left;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .big-foot ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .big-foot li {
+    list-style: none;
+    margin-top: 5px;
+  }
+  .big-foot li a {
+    text-decoration: none;
+    color: rgb(204, 193, 193);
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .big-foot li a:hover {
+    color: rgb(61, 226, 155);
+  }
+  .line {
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(37, 50, 124);
+  }
+  .small-foot {
+    padding-top: 21px;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(8, 7, 42);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /*  */
+ 
+
+@media (max-width: 500px){
+    .header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar{
+        gap: 10px;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    }
+
+    .slide {
+        margin-top: 150px;
+    }
+
+    /* .contant {
+        width: 35%;
+        left: 150px;
+        top: 50px;
+    } */
+    .contant h1{
+        word-spacing: 2px;
+        font-size: 40px;
+    
+    }
+    .contant p{
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+    .contant button{
+        padding: 10px 40px;
+        background-color: burlywood;
+        color: white;
+        border: none;
+        overflow: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .left{
+        float: left;
+    }
+    .left img{
+        /* margin-left: 50px; */
+        margin: auto;
+        margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    float: left;
+    }
+    .right{
+        /* margin-left: 50px; */
+        margin: auto;
+        margin-top: 20px;
+        width: 400px;
+        height: 500px;
+        float: left;
+        background-color: rgb(49, 46, 46);
+        margin-top: 20px;
+        padding: 70px 25px;
+    }
+
+  
+}
